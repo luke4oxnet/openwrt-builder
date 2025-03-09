@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
     'file' \
     'wget' \
     'ssh' \
+    'jq' \
   && \
   rm -f -r '/var/lib/apt/' && \
   rm -f -r '/var/cache/apt/' && \
