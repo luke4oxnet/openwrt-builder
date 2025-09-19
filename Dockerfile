@@ -11,7 +11,6 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
     'bison' \
     'g++' \
     'gawk' \
-    'gcc-multilib' \
     'gettext' \
     'git' \
     'libncurses5-dev' \
@@ -24,6 +23,7 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
     'wget' \
     'ssh' \
     'jq' \
+    'zstd \
   && \
   rm -f -r '/var/lib/apt/' && \
   rm -f -r '/var/cache/apt/' && \
