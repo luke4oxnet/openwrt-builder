@@ -24,7 +24,6 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
     'ssh' \
     'jq' \
     'zstd \
-    'gcc-multilib' \
   && \
   rm -f -r '/var/lib/apt/' && \
   rm -f -r '/var/cache/apt/' && \
