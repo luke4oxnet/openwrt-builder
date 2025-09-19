@@ -1,4 +1,4 @@
-FROM docker.io/debian:stable-slim
+FROM docker.io/debian:bookworm-slim
 
 ENV GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 WORKDIR /workdir
@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
     'ssh' \
     'jq' \
     'zstd \
+    'gcc-multilib' \
   && \
   rm -f -r '/var/lib/apt/' && \
   rm -f -r '/var/cache/apt/' && \
